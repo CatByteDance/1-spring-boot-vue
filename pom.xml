@@ -65,13 +65,16 @@
         </dependency>
 
 <!--        数据库连接池      -->
-<!--    做数据库操作时最好使用连接池技术，一次性申请多个链接，提高数据库连接效率   -->
+<!--    做数据库操作时最好去使用连接池技术，一次性申请多个链接，提高数据库连接效率   -->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid-spring-boot-starter</artifactId>
             <version>1.1.20</version>
         </dependency>
+
     </dependencies>
+
+
     <dependencyManagement>
         <dependencies>
             <dependency>
