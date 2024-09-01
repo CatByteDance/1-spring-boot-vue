@@ -29,20 +29,19 @@ public class SwaggerConfig {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("org"))   // com包下面所有的API都交给Swagger2管理
+                .apis(RequestHandlerSelectors.basePackage("org"))   // org包下面所有的API都交给Swagger2管理
                 .paths(PathSelectors.any()).build();
     }
 
 
     /**
      * 此处是API文档页面显示信息
-     * @return
      */
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("演示项目API")
-                .description("演示项目")
-                .version("1.0")
+                .title("演示项目API")       // 标题
+                .description("演示项目")    // 描述
+                .version("1.0")           // 版本
                 .build();
     }
 }
