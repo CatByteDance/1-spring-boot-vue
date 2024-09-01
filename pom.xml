@@ -13,13 +13,18 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring-boot.version>2.6.13</spring-boot.version>
 <!--        <spring-boot.version>2.5.4</spring-boot.version>-->
+
+
     </properties>
+
     <dependencies>
+        <!-- spring boot将传统web开发的mvc,json,tomcat整合，提供了该组件，简化配置    -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <!--    测试依赖    -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>

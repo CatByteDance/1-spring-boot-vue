@@ -38,6 +38,7 @@ public class ParamsController {
         return "POST请求";
     }
 
+//    当前台传过来的参数过多时，可以通过封装一个对象来简化，前提是传过来的参数必需和user类一致
     @RequestMapping(value = "/postTest3", method = RequestMethod.POST)
     public String postTest3(User user) {
         System.out.println(user);
@@ -45,7 +46,7 @@ public class ParamsController {
     }
 
     @RequestMapping(value = "/postTest4", method = RequestMethod.POST)
-//    json类型表单post要加入@RequestBody注解
+//   前端传送过来json类型表单post要加入@RequestBody注解
     public String postTest4(@RequestBody User user) {
         System.out.println(user);
         return "postTest4";
